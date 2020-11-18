@@ -3,7 +3,7 @@
 
 
 ## Mas por que um site?
- Comecei a desenvolver este site em **2020**, por vontade própria, pois senti a necessidade de *"virtualizar"* este evento que não iria mais acontecer presencialmente devido a **pandemia do vírus Covid-19**, o Coronavírus, quem paralisou totalmente todas as atividades escolares do jeito que conheciamos antes. O ensino a distância se tornou uma realidade, então por que não tornar os eventos escolares virtuais uma realidade também?
+ Comecei a desenvolver este site em **2020**, por vontade própria, pois senti a necessidade de *"virtualizar"* este evento que não iria mais acontecer presencialmente devido a **pandemia do vírus Covid-19**, o Coronavírus, que paralisou totalmente todas as atividades escolares do jeito que conheciamos antes. O ensino a distância se tornou uma realidade, então por que não tornar os eventos escolares virtuais uma realidade também?
 
 ## O que terá no site?
  1. As **matérias** do curso do 1° ao 3° ano com um breve resumo do que se trata.
@@ -26,7 +26,7 @@
 
 ---
 ## Banco de dados
- O sistema de banco de dados é simples, feito em **MySQL**, declarei ele como "FeiraAdm" e ele possui **apenas duas tabelas**, uma para armazenar as perguntas e outra para armazenar os dados de login dos administradores.
+ O sistema de banco de dados é simples, feito em **MySQL** e vai ser acessado via **PHP e JS**, declarei ele como "FeiraAdm" e ele possui **apenas duas tabelas**, uma para armazenar as perguntas e outra para armazenar os dados de login dos administradores.
 
  **SQL:**
  `CREATE DATABASE FeiraAdm;`
