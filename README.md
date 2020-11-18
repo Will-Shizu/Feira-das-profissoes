@@ -26,7 +26,7 @@
 
 ---
 ## Banco de dados
- O sistema de banco de dados é simples, feito em **MySQL**, declarei ele como "FeiraAdm" e ele possui *apenas duas tabelas*, uma para armazenar as perguntas e outra para armazenar os dados de login dos administradores.
+ O sistema de banco de dados é simples, feito em **MySQL**, declarei ele como "FeiraAdm" e ele possui **apenas duas tabelas**, uma para armazenar as perguntas e outra para armazenar os dados de login dos administradores.
 
  **SQL:**
  `CREATE DATABASE FeiraAdm;`
