@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+/* FORMATAÇÃO DA PÁGINA */
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	padding: 10px;
+	background-color: #251e3e;
+}
+
+header {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 2.1em;
+	padding: 5px;
+}
+
+header h2 {
+	font-size: 1.4em;
+}
+
+section#menu {
+	text-align: center;
+	display: block;
+	margin-bottom: 40px;
+	height: 20px;
+}
+
+#menu ul {
+	list-style: none;
+	display: block;
+}
+
+#menu ul li{
+	display: inline-block;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.3em;
+	color: #fff;
+	transition: font-size 0.2s;
+	transition: color 0.2s;
+}
+
+#menu ul li.right-border {
+	border-right: solid 2px #fff;
+	padding: 7px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#menu ul li:hover, #menu ul li:active {
+	color: #f4bc1c !important;
+	cursor: pointer;
+	font-size: 1.35em;
+}
+
+section#duvidas {
+	display: block;
+	padding: 20px;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+section#duvidas .duvida {
+	display: inline-block;
+	width: 350px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	margin: 10px;
+	max-width: 100%;
+}
+
+section#duvidas .duvida h3 {
+	font-family: 'Nunito Sans', sans-serif;
+	margin-bottom: 15px;
+	font-size: 1.2em;
+}
+
+section#duvidas .duvida p{
+	font-size: 1.05em;
+	margin-bottom: 10px;
+}
+
+section#duvidas .duvida #responder{
+	text-align: right;
+}
+
+section#duvidas .duvida #responder a {
+	font-size: 1em;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+/* DESING RESPONSIVO */
+
+/* SMALL MOBILE DEVICES */
+@media screen and (max-width: 500px) {
+	section#duvidas {
+		width: 95%;
+		margin: 0;
+	}
+}
+
+/* MEDIUM MOBILE DEVICES */
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+	section#duvidas {
+		width: 95%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+
+	section#duvidas .duvida {
+		width: 46%;
+	}
+}

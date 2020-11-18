@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+/* FORMATAÇÃO DA PÁGINA */
+
+h1, h2{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, li {
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+	text-align: center;
+	background-color: #251e3e;
+	color: #fff;
+	font-size: 1.3em;
+	padding: 20px;
+}
+
+header img {
+	height: 55px;
+	max-width: 80%;
+	margin: 5px;
+	margin-bottom: 30px;
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+section#materias {
+	text-align: center;
+	background-color: #251e3e;
+	padding: 10px;
+}
+
+div.ano {
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+	width: 350px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+	text-align: center;
+	padding: 20px;
+	background-color: #651e3e;
+	color: #fff;
+	margin: 20px;
+	margin-bottom: 40px;
+	border-radius: 5px;
+}
+
+.ano h2 {
+	font-size: 1.7em;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.ano ul {
+	text-align: left;
+	margin-left: 20px;
+	color: rgba(255,255,255,.95);
+	font-size: 1.15em;
+}
+
+.ano ul li {
+	padding-bottom: 15px;
+}
+
+b {
+	font-family: 'Nunito Sans', sans-serif;
+	color: rgba(255,255,255,.98);
+}
+
+.ano ul li:hover b {
+	color: #ffe338;;
+}
+
+div#btn button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 10px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background-color: #ffe338;
+	color: #051e3e;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	transition: background-color ease-in 0.2s;
+	-webkit-tap-highlight-color: transparent;
+}
+
+div#btn button:hover, div#btn button:active {
+	background-color: #f4bc1c;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #851e3e;
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	height: 90px;
+}
+
+footer a {
+	line-height: 90px;
+	text-decoration: underline;
+	color: #fff;
+}
+
+footer a:hover, footer a:active {
+	color: #ffe338;
+}
+
+/* DESING RESPONSIVO */
+
+/* SMALL MOBILE DEVICES */
+@media screen and (max-width: 500px) {
+	header {
+		padding: 10px;
+	}
+
+	header h1 {
+		font-size: 1.8em;
+	}
+
+	header img {
+		height: 40px;
+		margin-bottom: 20px;
+	}
+
+	div.ano {
+		padding: 15px;
+		width: 95%;
+		margin: 20px;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+}
+/* MEDIUM MOBILE DEVICE */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	header h1 {
+		font-size: 1.7em;
+		margin-top: 20px;
+	}
+
+	section#materias {
+		padding: 5px;
+	}
+
+	div.ano {
+		margin: 15px;
+		padding: 15px;
+		width: 44%;
+	}
+
+	.ano h2 {
+		font-size: 1.6em;
+	}
+}
+
+/* SMALL DESKTOP DEVICES */
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+	div.ano {
+		width: 400px;
+	}
+}

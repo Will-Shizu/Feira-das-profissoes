@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+	
+/*FORMATAÇÃO DA PÁGINA*/
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+	padding-top: 10px;
+	display: block;
+	text-align: center;
+	background-color: #051e3e;
+	color: #fff;
+}
+
+header img {
+	height: 55px;
+	max-width: 80%;
+	margin: 1%;
+	margin-bottom: 2%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+header h1 {
+	font-size: 2.5em;
+}
+
+header h2 {
+	font-size: 2.2em;
+}
+
+header div#predios {
+	background-image: url("../img/predios.png");
+	height: 400px;
+	background-size: 750px;
+	max-width: 100%;
+	background-position: center;
+	margin-top: 30px;
+}
+
+section#principal {
+	float: left;
+	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: #251e3e;
+	color: #fff;
+}
+
+section#principal div#resumo {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#resumo h4 {
+	font-size: 1.7em;
+	padding: 1%;
+}
+
+#resumo p {
+	font-size: 1.3em;
+}
+
+.principal_item {
+	width: 30%;
+	border: 2px solid #fff;
+	float: left;
+	padding: 20px;
+	margin: 1.4%;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	height: 180px;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.principal_item h5 {
+	font-size: 1.3em;
+	padding-bottom: 20px;
+}
+
+.principal_item p {
+	font-size: 1.1em;
+}
+
+.principal_item:hover, .principal_item:active {
+	background-color: rgba(0,0,0,.3);
+}
+
+section#duvidas {
+	clear: both;
+	text-align: center;
+	background-color: #651e3e;
+	color: #fff;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#duvidas h4 {
+	font-size: 1.7em;
+	padding: 1%;
+}
+
+#duvidas p {
+	font-size: 1.3em;
+}
+
+#duvidas form#form_pergunta {
+	margin-top: 20px;
+}
+
+
+#form_pergunta input[type="text"], input[type="email"] {
+	width: 400px;
+	height: 50px;
+	padding: 1%;
+	margin: 5px;
+	font-size: 1.1em;
+	border-radius: 2px;
+}
+
+#form_pergunta textarea{
+	width: 400px;
+	resize: none;
+	font-size: 1.5em;
+	padding: 1%;
+	margin: 5px;
+	border-radius: 2px;
+}
+
+#form_pergunta input[type="submit"] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 10px;
+	border-radius: 4px;
+	background-color: #ffe338;
+	color: #051e3e;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	transition: background-color ease-in 0.2s;
+	-webkit-tap-highlight-color: transparent;
+}
+
+#form_pergunta input[type = "submit"]:hover, #form_pergunta input[type = "submit"]:active {
+	background-color: #f4bc1c;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+	color: #fff;
+	background-color: #851e3e;
+	height: 90px;
+	padding: 0;
+	margin: 0;
+}
+
+footer a {
+	line-height: 90px;
+	color: #fff;
+	font-size: 1.2em;
+	-webkit-tap-highlight-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer a:hover, footer a:active {
+	color:  #ffe338;
+}
+
+
+/* DESIGN RESPONSIVO */
+
+/* SMALL MOBILE DEVICES */
+@media screen and (max-width: 500px) {
+	body {
+		overflow-x: hidden;
+		float: left;
+		max-width: 100%;
+	}
+
+	header img {
+		height: 40px;
+		margin-bottom: 20px;
+	}
+
+	header h1 {
+		font-size: 1.4em;
+	}
+
+	header h2 {
+		font-size: 1.35em;
+	}
+
+	header div#predios {
+		height: 200px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-top: 20px;
+	}
+
+	section#principal {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+
+	#principal div#resumo {
+		padding-left: 5px;
+		padding-right: 5px; 
+	}
+
+	#principal div#resumo h4{
+		padding-bottom: 20px;
+	}
+
+	#principal div#resumo p {
+		font-size: 1.2em;
+	}
+
+	.principal_item {
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		height: auto;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	section#duvidas {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	section#duvidas h4{
+		font-size: 1.6em;
+		padding-bottom: 20px;
+	}
+
+	#form_pergunta input,textarea {
+		max-width: 85%;
+	}
+}
+
+/* MEDIUM MOBILE DEVICES */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	header img {
+		margin-bottom: 30px;
+	}
+
+	header h1 {
+		font-size: 2em;
+	}
+
+	header h2 {
+		font-size: 1.7em;
+	}
+
+	header div#predios {
+		height: 350px;
+		background-size: 600px;
+	}
+
+	section#principal {
+		padding: 20px;
+	}
+
+	#principal h4 {
+		padding-bottom: 10px;
+	}
+
+	.principal_item {
+		width: 45%;
+		height: auto;
+	}
+
+	#principal div#materias {
+		margin-left: 3%;
+	}
+
+	#principal div#eventos {
+		margin-right: 3%;
+	}
+
+	#principal div#professores {
+		margin-left: 27%;
+		margin-right: 27%;
+	}
+
+	section#duvidas h4 {
+		padding-bottom: 15px;
+	}
+}
+
+/* SMALL DESKTOP DEVICES */
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+	.principal_item {
+		height: 200px;
+	}
+}

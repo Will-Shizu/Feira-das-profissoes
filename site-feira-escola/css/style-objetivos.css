@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+/* FORMATAÇÃO DA PÁGINA */
+
+h1, h2{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, li {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #251e3e;
+	text-align: center;
+}
+
+header {
+	color: #fff;
+	font-size: 1.3em;
+	padding: 20px;
+}
+
+header img {
+	height: 55px;
+	max-width: 80%;
+	margin: 5px;
+	margin-bottom: 30px;
+	-webkit-tap-highlight-color: transparent;
+}
+
+section#objetivos {
+	display: block;
+	background-color: #651e3e;
+	color: #fff;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	border-radius: 2px;
+	text-align: left;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+
+#objetivos div{
+	margin-bottom: 15px;
+}
+
+#objetivos div h2 {
+	padding: 5px;
+	padding-bottom: 10px;
+	font-size: 1.6em;
+}
+
+#objetivos div p {
+	font-size: 1.18em;
+	margin-left: 10px;
+	text-indent: 10px;
+}
+
+div#btn button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 10px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	background-color: #ffe338;
+	color: #051e3e;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	transition: background-color ease-in 0.2s;
+	-webkit-tap-highlight-color: transparent;
+}
+
+div#btn button:hover, div#btn button:active{
+	background-color: #f4bc1c;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #851e3e;
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	height: 90px;
+}
+
+footer a {
+	line-height: 90px;
+	text-decoration: underline;
+	color: #fff;
+}
+
+footer a:hover, footer a:active {
+	color: #ffe338;
+}
+
+/* DESING RESPONSIVO */
+
+/* SMALL MOBILE DEVICES */
+@media screen and (max-width: 500px) {
+	header {
+		padding: 10px;
+	}
+
+	header h1 {
+		font-size: 1.8em;
+	}
+
+	header img {
+		height: 40px;
+		margin-bottom: 20px;
+	}
+
+	section#objetivos {
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	#objetivos div {
+		margin-bottom: 50px;
+	}
+
+	#objetivos div h2 {
+		padding-left: 0;
+		padding-right: 0; 
+		padding-bottom: 20px;
+	}
+
+	#objetivos div p {
+		margin-left: 0;
+	}
+}
+
+/* Telas com a altura muito grande */
+@media screen and (min-height: 750px) {
+	footer {
+		display: none;
+	}
+}

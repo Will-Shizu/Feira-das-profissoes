@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+	<meta name="author" content="André Willyan">
+	<meta name="keywords" content="E.E.E.P, Abigail, Administração, Paracuru">
+	<meta name="description" content="Aqui você pode acessar a todas as informações necessárias e tirar suas dúvidas sobre o curso técnico em administração da E.E.E.P Profª Abigail Sampaio.">
+	<title>ADM - Feira das profissões</title>
+	<link rel="shortcut icon" href="img/adm-peq.png">
+	<link rel="stylesheet" href="css/style-home.css">
+</head>
+
+<body>
+	<header>
+		<img src="img/nome-escola.png" alt="E.E.E.P Professora Abigail Sampaio">
+		<h1>FEIRA DAS PROFISSÕES</h1>
+		<h2>CURSO TÉCNICO EM ADMINISTRAÇÃO</h2>
+		<div id="predios">
+			<!-- AQUI TEM UMA IMAGEM DE PRÉDIOS COMO BACKGROUND -->
+		</div>
+	</header>
+
+	<section id="principal">
+		<div id="resumo">
+			<h4>Pensando em ingressar no curso de administração?</h4>
+			<p>Esta página é exatamente pra você! Aqui você pode conferir como é o curso e como ele funciona, além de tirar suas dúvidas 100% online.</p>
+		</div>
+
+		<div class="principal_item" id="materias" onclick="redirecionar('materias.html')">
+			<h5>Matérias</h5>
+			<p>Acesse a grade de matérias da base técnica do 1° ao 3° ano acompanhado por um resumo do que consiste cada uma delas.</p>
+		</div>
+
+		<div class="principal_item" id="eventos" onclick="redirecionar('objetivos.html')">
+			<h5>Objetivos</h5>
+			<p>Veja quais são objetivos que a Escola Profissional e o Curso Técnico em administração tem para com os seus futuros alunos.</p>
+		</div>
+
+		<div class="principal_item" id="professores">
+			<h5>Profissionais</h5>
+			<p>Saiba quais profissionais estarão responsáveis pelo seu aprendizado durante o ensino da Administração.</p>
+		</div>
+	</section>
+
+	<section id="duvidas">
+		<h4>Leu todas as informações mas ainda tem alguma dúvida?</h4>
+		<p>Você pode enviar uma mensagem preenchendo o fomulário abaixo:</p>
+		<form id="form_pergunta">
+			<input name="nome" id="nome" type="text"  placeholder="Nome" maxlength="30" required><br>
+			<input name="email" id="email" type="email" placeholder="E-mail" autocomplete="off" required><br>
+			<textarea name="pergunta" id="pergunta" rows="3" minlength="1" maxlength="200" placeholder="Sua pergunta" autocomplete="off" required></textarea>
+			<br>
+			<input type="submit" value="Enviar" id="Enviar">
+		</form>
+		<p id="msg_envio"></p>
+	</section>
+
+	<footer>
+		<a href="#">Instagram</a>
+	</footer>
+</body>
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/script.js"></script>
+<script>
+	function redirecionar(pagina) {
+		location.replace(pagina)
+	}
+</script>
+</html>
