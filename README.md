@@ -28,7 +28,7 @@ __Nota:__ *Esta branch do site foi desenvolvida apenas para que uma demonstraç�
  - [x] Elaboração do sistema de login de usuários.
  - [ ] Comprar domínio e Hospedar o site.
 
- __Nota:__ *O site não poderá ser hospedado gratuitamente no **GitHub** devido a que essa plataforma **não oferece suporte a PHP e a Banco de dados**. Porém uma versão de demonstração está disponível clicando [aqui](https://will-shizu.github.io/Feira-das-profissoes).*
+ __Nota:__ *O site não poderá ser hospedado gratuitamente no **GitHub** devido a que essa plataforma **não oferece suporte a PHP e a Banco de dados**. Porém uma **versão de demonstração** está disponível clicando [aqui](https://will-shizu.github.io/Feira-das-profissoes).*
 
 ---
 ## Banco de dados
@@ -36,8 +36,10 @@ __Nota:__ *Esta branch do site foi desenvolvida apenas para que uma demonstraç�
  O sistema de banco de dados é simples, feito em **MySQL** e vai ser acessado via **PHP e JS**, declarei ele como "FeiraAdm" e ele possui **apenas duas tabelas**, uma para armazenar as perguntas e outra para armazenar os dados de login dos administradores.
 
  **SQL:**
- `CREATE DATABASE FeiraAdm;`
- `USE FeiraAdm;`
+ ```
+ CREATE DATABASE FeiraAdm;
+ USE FeiraAdm;
+ ```
 
 
  ### Tabela de dúvidas:
