@@ -165,6 +165,7 @@ section#duvidas {
 }
 
 footer {
+	clear: both;
 	text-align: center;
 	color: #fff;
 	background-color: #851e3e;
