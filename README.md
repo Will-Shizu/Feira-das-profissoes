@@ -1,3 +1,5 @@
+__Nota:__ *Esta branch do site foi desenvolvida apenas para que uma demonstração dele fosse possível de se hospedar no __GitHub Pages__, por este motivo toda e qualquer __interação com o banco de dados foi removida__, desbilitando a seção de dúvidas.*
+
 # Site da Feira das Profissões
  Um projeto de um portal para divulgar o **Curso Técnico em Administação da E.E.E.P Profª Abigail Sampaio** em um evento chamado **Feira das Profissões**, que tem a finalidade de apresentar os cursos da escola para os estudantes do 9° ano que tem a pretenção de ingressar no ensino médio profissional.
 
@@ -18,6 +20,7 @@
 ## Etapas do desenvolvimento
  - [x] Desenvolvimento da página principal.
  - [x] Desenvolvimento da página de matérias.
+ - [x] Desenvolvimento da página de objetivos.
  - [ ] Decisão entre o Currículos ou vídeos.
  - [ ] Desenvolvimento da página escolhida.
  - [x] Criação do sistema de banco de dados.
@@ -25,10 +28,11 @@
  - [x] Elaboração do sistema de login de usuários.
  - [ ] Comprar domínio e Hospedar o site.
 
- __Nota:__ *O site não poderá ser hospedado gratuitamente no **GitHub** devido a que essa plataforma **não oferece suporte a PHP e a Banco de dados**.*
+ __Nota:__ *O site não poderá ser hospedado gratuitamente no **GitHub** devido a que essa plataforma **não oferece suporte a PHP e a Banco de dados**. Porém uma versão de demonstração está disponível clicando [aqui](https://will-shizu.github.io/Feira-das-profissoes).*
 
 ---
 ## Banco de dados
+
  O sistema de banco de dados é simples, feito em **MySQL** e vai ser acessado via **PHP e JS**, declarei ele como "FeiraAdm" e ele possui **apenas duas tabelas**, uma para armazenar as perguntas e outra para armazenar os dados de login dos administradores.
 
  **SQL:**
