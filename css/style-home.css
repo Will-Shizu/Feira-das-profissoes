@@ -103,8 +103,68 @@ section#principal div#resumo {
 	background-color: rgba(0,0,0,.3);
 }
 
-footer {
+section#duvidas {
 	clear: both;
+	text-align: center;
+	background-color: #651e3e;
+	color: #fff;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#duvidas h4 {
+	font-size: 1.7em;
+	padding: 1%;
+}
+
+#duvidas p {
+	font-size: 1.3em;
+}
+
+#duvidas form#form_pergunta {
+	margin-top: 20px;
+}
+
+
+#form_pergunta input[type="text"], input[type="email"] {
+	width: 400px;
+	height: 50px;
+	padding: 1%;
+	margin: 5px;
+	font-size: 1.1em;
+	border-radius: 2px;
+}
+
+#form_pergunta textarea{
+	width: 400px;
+	resize: none;
+	font-size: 1.5em;
+	padding: 1%;
+	margin: 5px;
+	border-radius: 2px;
+}
+
+#form_pergunta input[type="submit"] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 10px;
+	border-radius: 4px;
+	background-color: #ffe338;
+	color: #051e3e;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	transition: background-color ease-in 0.2s;
+	-webkit-tap-highlight-color: transparent;
+}
+
+#form_pergunta input[type = "submit"]:hover, #form_pergunta input[type = "submit"]:active {
+	background-color: #f4bc1c;
+	cursor: pointer;
+}
+
+footer {
 	text-align: center;
 	color: #fff;
 	background-color: #851e3e;
