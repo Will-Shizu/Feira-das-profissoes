@@ -34,6 +34,10 @@ header {
 	padding: 20px;
 }
 
+header h1 {
+	margin-bottom: 20px;
+}
+
 header img {
 	height: 55px;
 	max-width: 80%;
@@ -123,6 +127,7 @@ footer a:hover, footer a:active {
 
 	header h1 {
 		font-size: 1.8em;
+		margin-bottom: 30px;
 	}
 
 	header img {
@@ -132,12 +137,14 @@ footer a:hover, footer a:active {
 
 	section#objetivos {
 		text-align: center;
-		padding-top: 30px;
 		padding: 20px;
+		padding-top: 30px;
+		padding-bottom: 5px;
 	}
 
 	#objetivos div {
-		margin-bottom: 50px;
+		margin-bottom: 60px;
+		margin-top: 10px;
 	}
 
 	#objetivos div h2 {
