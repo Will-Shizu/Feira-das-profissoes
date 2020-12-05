@@ -9,8 +9,7 @@
  1. As **matérias** do curso do 1° ao 3° ano com um breve resumo do que se trata.
  2. Uma página para informar os **objetivos do curso**.
  3. **Currículo** dos professores da base técnica ou **vídeos** falando mais sobre o curso.
-    1. Ainda vai ser decidido no planejamento qual desses dois tópicos tem mais relevância.
-    2. Apenas um será mantido e implementado.
+    1. Apenas um foi mantido e implementado (O escolhido foram os vídeos).
  4. Uma seção para os alunos enviarem suas **dúvidas**.
  5. Uma página, apenas disponível para os administradores, para **responder as dúvidas** via E-mail.
 
@@ -19,8 +18,8 @@
  - [x] Desenvolvimento da página principal.
  - [x] Desenvolvimento da página de matérias.
  - [x] Desenvolvimento da página de objetivos.
- - [ ] Decisão entre o Currículos ou vídeos.
- - [ ] Desenvolvimento da página escolhida.
+ - [x] Decisão entre o Currículos ou vídeos.
+ - [x] Desenvolvimento da página escolhida.
  - [x] Criação do sistema de banco de dados.
  - [x] Implementação do sistema de perguntas.
  - [x] Elaboração do sistema de login de usuários.
