@@ -23,12 +23,20 @@ p, li {
 	font-family: 'Lato', sans-serif;
 }
 
+body {
+	background-color: #251e3e;
+}
+
 header {
 	text-align: center;
 	background-color: #251e3e;
 	color: #fff;
 	font-size: 1.3em;
 	padding: 20px;
+}
+
+header h1 {
+	font-size: 1.95em;
 }
 
 header img {
@@ -49,12 +57,12 @@ div.video {
 	vertical-align: top;
 	position: relative;
 	display: inline-block;
-	width: 80%;
+	width: 47%;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.4);
 	text-align: center;
 	padding: 20px;
 	padding-top: 35px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 	background-color: #651e3e;
 	color: #fff;
 	margin: 20px;
@@ -63,15 +71,16 @@ div.video {
 }
 
 .video h2 {
-	font-size: 1.45em;
+	font-size: 1.6em;
 	padding: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	transition: ease-out color 0.2s
 }
 
 .video iframe {
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+	max-width: 95%;
 }
 
 div#btn button {
@@ -112,4 +121,35 @@ footer a {
 
 footer a:hover, footer a:active {
 	color: #ffe338;
+}
+
+/* DESIGN RESPONSIVO */
+/* SMALL DEVICES */
+@media screen and (max-width: 500px) {
+	header h1 {
+		font-size: 1.7em;
+	}
+
+	div.video {
+		width: 90%;
+		padding-top: 25px;
+		padding-bottom: 35px;
+	}
+
+	div.video h2 {
+		font-size: 1.45em;
+		margin-bottom: 30px;
+	}
+
+	div.video iframe {
+		width: 295px;
+		height: 165px; 
+	}
+}
+
+/* MEDIUM DEVICES */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	div.video {
+		width: 80%;
+	}
 }
