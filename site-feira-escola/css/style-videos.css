@@ -25,13 +25,18 @@ p, li {
 
 body {
 	background-color: #251e3e;
-	text-align: center;
 }
 
 header {
+	text-align: center;
+	background-color: #251e3e;
 	color: #fff;
 	font-size: 1.3em;
 	padding: 20px;
+}
+
+header h1 {
+	font-size: 1.95em;
 }
 
 header img {
@@ -42,35 +47,40 @@ header img {
 	-webkit-tap-highlight-color: transparent;
 }
 
-section#objetivos {
-	display: block;
+section#all-videos {
+	text-align: center;
+	background-color: #251e3e;
+	padding: 10px;
+}
+
+div.video {
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+	width: 47%;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+	text-align: center;
+	padding: 20px;
+	padding-top: 35px;
+	padding-bottom: 40px;
 	background-color: #651e3e;
 	color: #fff;
-	width: 90%;
-	margin: auto;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding: 30px;
-	border-radius: 2px;
-	text-align: left;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	margin: 20px;
+	margin-bottom: 40px;
+	border-radius: 5px;
 }
 
-#objetivos div{
-	margin-bottom: 15px;
-}
-
-#objetivos div h2 {
-	padding: 5px;
-	padding-bottom: 10px;
+.video h2 {
 	font-size: 1.6em;
+	padding: 5px;
+	margin-bottom: 40px;
+	transition: ease-out color 0.2s
 }
 
-#objetivos div p {
-	font-size: 1.18em;
-	margin-left: 10px;
-	text-indent: 5px;
-	line-height: 27px;
+.video iframe {
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+	max-width: 100%;
 }
 
 div#btn button {
@@ -79,7 +89,7 @@ div#btn button {
 	padding-left: 30px;
 	padding-right: 30px;
 	margin: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	border-radius: 4px;
 	background-color: #ffe338;
 	color: #051e3e;
@@ -89,7 +99,7 @@ div#btn button {
 	-webkit-tap-highlight-color: transparent;
 }
 
-div#btn button:hover, div#btn button:active{
+div#btn button:hover, div#btn button:active {
 	background-color: #f4bc1c;
 	cursor: pointer;
 }
@@ -113,47 +123,33 @@ footer a:hover, footer a:active {
 	color: #ffe338;
 }
 
-/* DESING RESPONSIVO */
-
-/* SMALL MOBILE DEVICES */
+/* DESIGN RESPONSIVO */
+/* SMALL DEVICES */
 @media screen and (max-width: 500px) {
-	header {
-		padding: 10px;
-	}
-
 	header h1 {
-		font-size: 1.8em;
+		font-size: 1.7em;
 	}
 
-	header img {
-		height: 40px;
-		margin-bottom: 20px;
+	div.video {
+		width: 90%;
+		padding-top: 25px;
+		padding-bottom: 35px;
 	}
 
-	section#objetivos {
-		text-align: center;
-		padding-top: 30px;
-		padding: 20px;
+	div.video h2 {
+		font-size: 1.45em;
+		margin-bottom: 30px;
 	}
 
-	#objetivos div {
-		margin-bottom: 50px;
-	}
-
-	#objetivos div h2 {
-		padding-left: 0;
-		padding-right: 0; 
-		padding-bottom: 20px;
-	}
-
-	#objetivos div p {
-		margin-left: 0;
+	div.video iframe {
+		width: 295px;
+		height: 165px; 
 	}
 }
 
-/* Telas com a altura muito grande */
-@media screen and (min-height: 750px) {
-	footer {
-		display: none;
+/* MEDIUM DEVICES */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	div.video {
+		width: 80%;
 	}
 }

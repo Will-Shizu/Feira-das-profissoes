@@ -202,7 +202,7 @@ footer a:hover, footer a:active {
 	}
 
 	header h1 {
-		font-size: 1.4em;
+		font-size: 1.5em;
 	}
 
 	header h2 {
@@ -217,8 +217,8 @@ footer a:hover, footer a:active {
 	}
 
 	section#principal {
-		padding-top: 30px;
-		padding-bottom: 10px;
+		padding-top: 35px;
+		padding-bottom: 40px;
 	}
 
 	#principal div#resumo {
@@ -232,6 +232,7 @@ footer a:hover, footer a:active {
 
 	#principal div#resumo p {
 		font-size: 1.2em;
+		line-height: 25px;
 	}
 
 	.principal_item {
@@ -239,8 +240,8 @@ footer a:hover, footer a:active {
 		margin-right: 5%;
 		margin-left: 5%;
 		height: auto;
-		margin-bottom: 10px;
-		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-top: 15px;
 	}
 
 	section#duvidas {
@@ -250,11 +251,20 @@ footer a:hover, footer a:active {
 
 	section#duvidas h4{
 		font-size: 1.6em;
-		padding-bottom: 20px;
+		padding-bottom: 25px;
 	}
+
+	section#duvidas p{
+		margin-bottom: 40px;
+	} 
 
 	#form_pergunta input,textarea {
 		max-width: 85%;
+		margin-bottom: 8px;
+	}
+
+	#form_pergunta input[type="submit"] {
+		margin-top: 25px;
 	}
 }
 
