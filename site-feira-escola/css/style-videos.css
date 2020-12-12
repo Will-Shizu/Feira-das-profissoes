@@ -57,7 +57,7 @@ div.video {
 	vertical-align: top;
 	position: relative;
 	display: inline-block;
-	width: 47%;
+	width: 44%;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.4);
 	text-align: center;
 	padding: 20px;
@@ -66,7 +66,7 @@ div.video {
 	background-color: #651e3e;
 	color: #fff;
 	margin: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	border-radius: 5px;
 }
 
@@ -89,6 +89,7 @@ div#btn button {
 	padding-left: 30px;
 	padding-right: 30px;
 	margin: 10px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 	border-radius: 4px;
 	background-color: #ffe338;
