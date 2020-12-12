@@ -38,7 +38,7 @@ else {
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="author" content="André Willyan">
 	<title>ADM - Dúvidas</title>
-	<link rel="icon" href="img/adm.png">
+	<link rel="icon" href="img/adm-peq.png">
 	<link rel="stylesheet" href="css/style-duvidas.css">
 </head>
 
