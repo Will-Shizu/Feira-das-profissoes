@@ -23,7 +23,7 @@
  - [x] Criação do sistema de banco de dados.
  - [x] Implementação do sistema de perguntas.
  - [x] Elaboração do sistema de login de usuários.
- - [ ] Comprar domínio e Hospedar o site.
+ - [x] Comprar domínio e Hospedar o site.
 
  __Nota:__ *O site não poderá ser hospedado gratuitamente no **GitHub** devido a que essa plataforma **não oferece suporte a PHP e a Banco de dados**. Porém uma **versão de demonstração** está disponível clicando [aqui](https://will-shizu.github.io/Feira-das-profissoes).*
 
