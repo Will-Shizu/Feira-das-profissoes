@@ -12,6 +12,16 @@
 </head>
 
 <body>
+	<div class="aviso" id="div-aviso">
+		<div class="warning" id="div-warn">
+			<h3>A página oficial já está disponível!</h3>
+			<div class="btns">
+				<button class="sair" id="btn-fechar" onclick="fechar()">Fechar</button>
+				<button class="acess" id="btn-acess" onclick="redirecionar('https://www.feira-adm.cf')">Acessar</button>
+			</div>
+		</div>
+	</div>
+
 	<header>
 		<img src="img/nome-escola.png" alt="E.E.E.P Professora Abigail Sampaio">
 		<h1>FEIRA DAS PROFISSÕES</h1>
@@ -51,8 +61,21 @@
 <script src="js/jquery-3.5.1.js"></script>
 <script src="js/script.js"></script>
 <script>
+	window.onload = function() {
+		document.getElementById('div-aviso').style.opacity = 1;
+		document.getElementById('div-warn').style.transform = 'translateY(200px)';
+	}
+
 	function redirecionar(pagina) {
 		location.replace(pagina)
+	}
+	function fechar() {
+		document.getElementById('div-warn').style.opacity = 0;
+		document.getElementById('div-aviso').style.opacity = 0;
+		setTimeout(function(){
+			document.getElementById('div-warn').style.display = 'none';
+			document.getElementById('div-aviso').style.display = 'none';
+		}, 301)
 	}
 </script>
 </html>
